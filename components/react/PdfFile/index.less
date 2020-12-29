@@ -1,0 +1,38 @@
+.pdf_container {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    .pdf_loading {
+        margin-top: 20%;
+        display: flex;
+        justify-content: center;
+    }
+    .pdf_pageSize {
+        font-size: 0.8em;
+        position: absolute;
+        bottom: 15px;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    .pdf_page {
+        position: absolute;
+        bottom: 15px;
+        left: 50%;
+        background: white;
+        opacity: 0;
+        transform: translateX(-50%);
+        transition: opacity ease-in-out 0.2s;
+        box-shadow: 0 30px 40px 0 rgba(16, 36, 94, 0.2);
+        border-radius: 4px;
+        & > span {
+            font-size: 0.8em;
+            padding: 0 0.5em;
+        }
+    }
+
+    &:hover {
+        .pdf_page {
+            opacity: 1;
+        }
+    }
+}
