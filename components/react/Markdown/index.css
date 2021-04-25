@@ -1,0 +1,24 @@
+.bytemd {
+  height: calc(100vh - 60px);
+}
+
+.markdown-body blockquote {
+  color: #666;
+  padding: 1px 23px;
+  margin: 22px 0;
+  border-left: 4px solid #cbcbcb;
+  background-color: #f8f8f8;
+}
+
+.markdown-body img {
+  max-width: 100%;
+  box-sizing: initial;
+  background-color: #fff;
+}
+
+.markdown-view-container {
+  width: 700px;
+  margin: 0 auto;
+  background-color: #fff;
+  padding: 20px;
+}
